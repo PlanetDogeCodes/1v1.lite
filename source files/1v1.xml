@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-<ModulePrefs title="Google.com" />
+<ModulePrefs title="Home - Classroom" />
 <Content type="html"><![CDATA[
 
 
@@ -43,24 +43,6 @@
     <script src="https://cdn.jsdelivr.net/gh/n-101-1/1@main/1login.js?v=2"></script>
     <script src="https://cdn.jsdelivr.net/gh/n-101-1/1@main/1firestore.js"></script>
 
-    <script>
-      initializeFireBase();
-
-      function showAds() {
-        console.log("show ads");
-      }
-      function requestNewAd() {
-        // Show video ad
-        unityAdFinishedCallback();
-      }
-      function unityAdFinishedCallback() {
-        try {
-          if (gameInstance) gameInstance.SendMessage("AdsManager", "OnWebCallback");
-        } catch (error) {
-          console.log(error);
-        }
-      }
-    </script>
   </body>
 </html>
 
